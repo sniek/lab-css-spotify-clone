@@ -6,3 +6,191 @@ Green: #00B172
 White: #FFF
 
 */
+
+/* Reset default browser styles and provide a consistent starting point (copied from recipe lab project */
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    font-weight: lighter;
+}
+
+/*  Set the font */
+body {
+    font-family: "Helvetica", sans-serif;
+    color: #1A1A1A;
+}
+
+#header {
+    box-sizing: border-box;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+}
+
+main {
+    margin-top: 60px;
+    overflow: hidden;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px;
+}
+
+#header nav {
+    margin-top: 15px;
+}
+
+#header nav ul {
+    float: right;
+    list-style-type: none;
+}
+
+#header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+#header nav ul li a {
+    text-decoration: none;
+    color: #1A1A1A;
+}
+
+.hero {
+    /* had to paste in the github url, otherwise it was not loading the background image on my local machine */
+    background-image: url("https://raw.githubusercontent.com/sniek/lab-css-spotify-clone/master/images/landing.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* position: relative; */
+    width: auto;
+    height: 1000px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4em;
+    font-weight: 500;
+}
+
+.hero p {
+    font-size: 1.4em;
+}
+
+#headline {
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;   
+    margin: 20px;
+    font-size: 1.3em;
+}
+
+#headline h2 {
+   border-bottom: 3px solid #00B172; 
+   padding-bottom: 5px;
+   margin-top: 40px;
+}
+
+.features {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+}
+
+.features img {
+    width: 100px;
+    height: auto;
+}
+
+.features h3 {
+    color: #00B172;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.features div {
+    margin: 50px;
+    width: 250px;
+}
+
+.features div p {
+    color: #1A1A1A;
+}
+
+.green-section {
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #00B172;
+    width: 1100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    /* had to paste in the github url, otherwise it was not loading the background image on my local machine */
+    background-image: url('https://raw.githubusercontent.com/sniek/lab-css-spotify-clone/master/images/spotify-icon-white.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 10%;
+    color: #fff;
+}
+
+.green-content {
+    width: 450px;
+}
+
+.green-content div {
+    margin: 50px 0;
+}
+
+.green-content h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.green-section div img {
+    width: 300px;
+    margin: 50px;
+}
+
+.green-content div {
+    width: 300px;
+}
+
+#headline-white {
+    font-size: 1.3em;
+    padding-bottom: 5px;
+    border-bottom: 3px solid white;
+    width: 100%;
+}
